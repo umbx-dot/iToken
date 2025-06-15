@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "iToken",
+  "version": "1.7",
+  "description": "iCord forked version only token related",
+  "permissions": [
+    "storage",
+    "scripting",
+    "tabs",
+    "clipboardWrite",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://discord.com/*",
+    "https://discordapp.com/*"
+  ],
+  "incognito": "spanning",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://discord.com/*", "https://discordapp.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
