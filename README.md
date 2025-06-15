@@ -75,7 +75,7 @@ For the token login feature to work properly, you must enable the extension in i
 1. Paste a Discord token in the "Token to Validate" field
 2. Click "Validate Token"
 3. View detailed information about the token including:
-   - Username and discriminator
+   - Username 
    - User ID and email
    - MFA status
    - Account verification status
@@ -88,13 +88,6 @@ For the token login feature to work properly, you must enable the extension in i
 3. An incognito popup window will open
 4. The extension will automatically inject the token and reload the page
 5. You should be logged in with the provided token
-
-## Security Considerations
-
-- This extension manipulates Discord tokens, which are sensitive authentication credentials
-- Only use tokens from accounts you own or have explicit permission to access
-- Be cautious when sharing or validating tokens from unknown sources
-- The extension uses incognito mode for token login to isolate sessions
 
 ## Troubleshooting
 
@@ -109,7 +102,7 @@ For the token login feature to work properly, you must enable the extension in i
 - Check browser console for any script errors
 
 ### Token Login Fails
-- Ensure incognito mode is enabled for the extension
+- Ensure incognito mode is allowed for the extension
 - Verify the token is valid using the token validator first
 - Check that popup blockers are not interfering with the login window
 
@@ -117,13 +110,6 @@ For the token login feature to work properly, you must enable the extension in i
 - Go to your browser's extension settings
 - Find iToken and enable "Allow in incognito/private windows"
 - Restart your browser after making this change
-
-## Technical Details
-
-- **Manifest Version**: 3
-- **Content Security Policy**: Restricts script execution for security
-- **Service Worker**: Handles background tasks and API calls
-- **Content Script**: Runs on Discord pages to provide the user interface
 
 ## Browser Compatibility
 
@@ -135,12 +121,6 @@ For the token login feature to work properly, you must enable the extension in i
 
 This project is licensed under the MIT License.
 
-## Credits
-
-- Created by umbx-dot
-- GitHub: github.com/umbx-dot
-- Discord: idom_71966
-- Telegram: @umbx1
 
 ## Disclaimer
 
