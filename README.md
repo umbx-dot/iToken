@@ -119,9 +119,9 @@ For the token login feature to work properly, you must enable the extension in i
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the DOM license.
 
 
 ## Disclaimer
 
-This extension is for educational and legitimate account management purposes only. Users are responsible for complying with Discord's Terms of Service and applicable laws. The developers are not responsible for any misuse of this tool.
+This extension is for educational and legitimate account management purposes only. Read the License file for further information. 
